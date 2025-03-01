@@ -1,0 +1,46 @@
+.box {
+  width: 200px;
+  height: 100px;
+  border-radius: 20px;
+  background-color: blue;
+  animation: go-around 3s ease-in-out infinite alternate;
+}
+
+@keyframes go-around {
+  0%,
+  100% {
+    margin-left: 10px;
+    background-color: blue;
+    transform: rotate(0deg);
+  }
+  12.5% {
+    background-color: green;
+  }
+  25% {
+    margin-top: 10px;
+    margin-left: 1680px;
+    background-color: yellow;
+    transform: rotate(180deg);
+  }
+  37.5% {
+    background-color: orange;
+  }
+  50% {
+    margin-top: 900px;
+    margin-left: 1680px;
+    background-color: red;
+    transform: rotate(360deg);
+  }
+  62.5% {
+    background-color: deeppink;
+  }
+  75% {
+    margin-left: 10px;
+    margin-top: 900px;
+    background-color: tomato;
+    transform: rotate(180deg);
+  }
+  87.5% {
+    background-color: lawngreen;
+  }
+}
