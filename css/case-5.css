@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+main {
+  position: absolute;
+}
+
+section {
+  display: flex;
+  height: 100vh;
+  width: 400vw;
+  animation: change-background 5s linear infinite alternate;
+}
+
+.image {
+  height: 100%;
+  width: 25%;
+}
+
+.image-1 {
+  background: url(/assets/images/mountain.jpg);
+  background-size: cover;
+}
+
+.image-2 {
+  background: url(/assets/images/bird.jpg);
+  background-size: cover;
+}
+
+.image-3 {
+  background: url(/assets/images/evening.jpg);
+  background-size: cover;
+}
+
+.image-4 {
+  background: url(/assets/images/fish.jpg);
+  background-size: cover;
+}
+
+@keyframes change-background {
+  0%,
+  15% {
+    transform: translateX(0);
+  }
+  25%,
+  40% {
+    transform: translateX(-25%);
+  }
+  50%,
+  65% {
+    transform: translateX(-50%);
+  }
+  85%,
+  100% {
+    transform: translateX(-75%);
+  }
+}
